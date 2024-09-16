@@ -1,0 +1,182 @@
+.header
+{
+    position: sticky;
+    top: 0;
+    z-index: 222;
+}
+
+
+.manu__bar
+{
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* xs ---mobile*/
+@media (min-width: 340px) 
+{
+    .header__nav
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: var(--size-xl);
+        background-color: var(--clr-dark);
+    
+    }
+
+
+    .nav__logo a 
+    {
+        text-decoration: none;
+        font-size: var(--size-xl);
+        font-weight: bold;
+
+    }
+
+    .nav__logo a span
+    {
+        color: var(--clr-rose);
+    } 
+
+    .manu__items
+    {
+        display: none;
+    }
+
+    .manu__bar
+    {
+     height: var(--size-2xl);
+     width: var(--size-2xl);
+     color: var(--clr-light);
+     display: block;
+    }
+}
+
+
+
+ /* md --tablet*/ 
+
+@media (min-width: 768px) 
+{
+    .header__nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--size-xl);
+    background-color: var(--clr-dark);
+    
+}
+    .nav__logo a 
+    {
+    text-decoration: none;
+    font-size: var(--size-3xl);
+    font-weight: bold;
+
+    }
+
+    .nav__logo a span
+    {
+        color: var(--clr-rose);
+    }
+
+    .manu__items
+    {
+        display: none;
+    }
+
+
+    .manu__bar
+    {
+     height: var(--size-3xl);
+     width: var(--size-3xl);
+     color: var(--clr-light);
+     display: block;
+    }
+    
+}
+
+
+
+/* lg laptop*/
+@media (min-width: 1024px) 
+{
+
+    .header__nav
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: var(--size-xl);
+        background-color: var(--clr-dark);
+        
+    }
+
+    .nav__logo a 
+    {
+    text-decoration: none;
+    font-size: var(--size-4xl);
+    font-weight: bold;
+
+    }
+
+    .nav__logo a span
+    {
+        color: var(--clr-rose);
+    }
+
+    .manu__bar
+    {
+        display: none;
+    }
+
+    .manu__items
+    {
+        display: flex;
+        gap: 3em;
+    }
+
+    .manu__items li
+    {
+        list-style: none;
+        
+        margin-top: 1.2em;
+    }
+
+    .manu__items li a
+    {
+        text-decoration: none;
+        font-size: var(--size-lg);
+        color: var(--clr-slate600);
+        transition: all .8s;
+    }
+
+    .manu__items li a:hover
+    {
+        color: var(--clr-light);
+    }
+
+    .manu__items button
+    {
+        border: 2px solid var(--clr-slate400);
+        border-radius: 10%;
+        color: var(--clr-light);
+        padding: 10px;
+        margin-top: 5px;
+        width: 100px;
+        transition: all .8s;
+    }
+
+    .manu__items button:hover
+    {
+        border: 2px solid var(--clr-rose);
+    }
+
+
+}
+
+

@@ -1,0 +1,234 @@
+.main__about
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+    color: var(--clr-slate400);
+}
+.summary
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.summary h1
+{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--clr-slate800);
+    letter-spacing: 10px;
+    text-transform: uppercase; 
+}
+.summary p
+{
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+
+}
+.teamMate
+{
+    margin-top: 30px;
+    position: relative;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 8px;
+    align-content: flex-start;
+    opacity: 100%;
+}
+
+
+
+.col1, .col2, .col3, .col4, .col5, .col6 {
+    width: 30%;
+    border: 0.5px solid var(--clr-slate800);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    
+}
+
+.row .col1 img, .row .col2 img, .row .col3 img, 
+.row .col4 img, .row .col5 img, .row .col6 img 
+{
+    height: 120px;
+    width: 100px;
+    object-fit: cover; 
+    border-radius: 30%;
+}
+
+
+.row .col1 h1, .row .col2 h1, .row .col3 h1, 
+.row .col4 h1, .row .col5 h1, .row .col6 h1 {
+    font-size: var(--size-xl); 
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+/* ----------------ani-amni--------- */
+
+/* Define the slideLeft animation */
+@keyframes slideLeft {
+    0% {
+        right: calc(100% - 100px);
+    }
+    100% {
+        right: 0;
+    }
+}
+
+/* Define the slideRight animation */
+@keyframes slideRight {
+    0% {
+        left: calc(100% - 100px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/* Apply the animations */
+.slideLeft {
+    animation: slideLeft 5s forwards;
+}
+
+.slideRight {
+    animation: slideRight 5s forwards;
+}
+
+/* ----------------ani-amni--------- */
+
+
+
+.SocialIcons
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.SocialIcons svg
+{
+    cursor: pointer;
+    height: var(--size-xl);
+    width: var(--size-xl);
+    color: var(--clr-slate600);
+    transition: all .8s;
+    
+}
+
+.SocialIcons svg:hover
+{
+    color: var(--clr-slate400);
+}
+
+.row .col1 button, .row .col2 button, .row .col3 button, 
+.row .col4 button, .row .col5 button, .row .col6 button 
+{
+    border: 1px solid var(--clr-slate800);
+    color: var(--clr-slate800);
+    font-size:var(--size-sm);
+    font-weight: bold;
+    padding: 5px;
+    margin: 8px;
+    width: 100px;
+    transition: all .8s;
+}
+
+/* Optional: Styling for when the button is hovered over */
+.row .col1 button:hover, .row .col2 button:hover, .row .col3 button:hover, 
+.row .col4 button:hover, .row .col5 button:hover, .row .col6 button:hover 
+{
+    border: 1px solid var(--clr-rose);
+    color: var(--clr-rose);
+}
+
+
+.fulldetails
+{
+    width: 80%;
+    padding: 10px;
+    background-color: var(--clr-slate800);
+    overflow: hidden;
+    margin: 0px auto;
+    display: none;
+    justify-content: center;
+    gap: 1rem;
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 22;
+}
+
+.fulldetails h1
+{
+    margin-top: 10px;
+    color: var(--clr-light);
+}
+
+.fulldetails button 
+{
+    height: var(--size-3xl);
+    width: var(--size-3xl);
+    color: var(--clr-light);
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    transition: all .4s;
+}
+.fulldetails button:hover
+{
+    color: var(--clr-rose);
+}
+
+
+
+.fulldetails .fullDetailsCol1
+{
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 40%;
+}
+
+.fulldetails .fullDetailsCol2
+{
+    margin-top: 20px;
+    padding: 20px;
+    width: 60%;
+}
+
+#memberImg
+{
+    height: 25rem;
+    width: 40rem;
+    object-fit: cover; 
+    border-radius: 10%;
+}
+
+

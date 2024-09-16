@@ -1,0 +1,93 @@
+.main__reviews
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    align-items: center;
+    gap: 5rem;
+}
+.sectionName
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 0px auto;
+    border-right: 1px solid var(--clr-slate800);
+    height: 30vh;
+}
+.sectionName h1
+{
+    padding: 10px;
+    color: var(--clr-slate400);
+    letter-spacing: 10px;
+    text-transform: uppercase; 
+}
+
+.allReviews
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 60%;
+    margin: 0px auto;
+    padding: 5rem;
+}
+
+.allReviews button
+{
+    height: 100px;
+    width: 80px;
+    padding: 5px;
+
+}
+
+.allReviews button svg
+{
+    height: 100%;
+    width: 100%;
+    color: var(--clr-slate400);
+}
+
+.allReviews .review
+{
+    background-image: url("img/paper.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem;
+    margin: 0px auto;
+}
+
+.allReviews .review h2
+{
+    color: var(--clr-slate800);
+    margin-bottom: .5rem;
+    text-align: center;
+    border-bottom: .5px solid var(--clr-slate800);
+    transition-property: opacity, transform; /* Transition opacity and transform */
+    transition-duration: 0.3s; /* 0.3 seconds */
+    transition-timing-function: ease-in-out; /* Ease in and out */
+    transition-delay: 0.1s; /* 0.1 second delay */
+}
+
+.allReviews .review p
+{
+    color: var(--clr-indigo);
+    margin-bottom: 1rem;
+    text-align: center;
+    height: 30vh;
+    opacity: 80%;
+    padding: 2rem;
+    transition-property: opacity, transform; /* Transition opacity and transform */
+    transition-duration: 0.3s; /* 0.3 seconds */
+    transition-timing-function: ease-in-out; /* Ease in and out */
+    transition-delay: 0.1s; /* 0.1 second delay */
+}

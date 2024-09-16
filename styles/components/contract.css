@@ -1,0 +1,125 @@
+.contract 
+{
+    display: none;
+    position: absolute;
+    top: 20vh;
+    left: 10%;
+    z-index: 22;
+    background-color: var(--clr-slate600);
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.contract .contract_info 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 1rem;
+    color: var(--clr-slate800);
+}
+
+.contract .contract_info .social_midia_icons 
+{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.contract .contract_info .social_midia_icons svg 
+{
+    display: flex;
+    height: var(--size-2xl);
+    width: var(--size-2xl);
+    cursor: pointer;
+    transition: all .8s;
+}
+
+.contract .contract_info .social_midia_icons svg:hover 
+{
+    color: var(--clr-rose);
+    box-shadow: 5px 5px 10px var(--clr-indigo);
+}
+
+.contract .contract_info h3 
+{
+    margin: 0; 
+}
+
+.contract .massage_box 
+{
+    width: 60%; 
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    align-items: center;
+}
+
+#closeMsgboxButton 
+{
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    height: 2rem;
+    width: 2rem;
+}
+.contract .massage_box label 
+{
+    display: block;
+    margin-top: .5rem;
+    color: var(--clr-indigo);
+    font-weight: bold;
+
+}
+
+.contract .massage_box input
+{
+    color: var(--clr-indigo);
+    background-color: var(--clr-dark);
+    width: 40%; 
+    height: 3rem;
+    padding: 0.5rem; 
+    text-align: center;
+    margin-bottom: 1rem; 
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+.contract .massage_box textarea 
+{
+    width: 100%; 
+    font-size: var(--size-base);
+    padding: 0.5rem; 
+    text-align: center;
+    margin-bottom: 1rem; 
+    outline: none;
+    border: none; 
+    border-radius: 20px;
+    color: var(--clr-indigo);
+    background-color: var(--clr-dark);
+    height: 150px; /* Set the height */
+    resize: none;
+}
+
+.contract .massage_box button 
+{
+    padding: 0.5rem 1rem; 
+    border: 1px solid var(--clr-slate400);
+    color: rgb(32, 31, 31); 
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.8s ease; 
+}
+
+.contract .massage_box button:hover 
+{
+    border:1px solid var(--clr-rose);
+    color: var(--clr-rose);
+}
